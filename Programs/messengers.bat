@@ -21,23 +21,48 @@ echo ========================================
 
 set /p choice="Enter your choice: "
 
+if "%choice%"=="3" (
+   echo Installing, please wait...
+   winget install Viber.Viber --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
+   goto finish
+) 
+
+if "%choice%"=="4" (
+   echo Installing, please wait...
+   winget install WhatsApp.WhatsApp --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
+   goto finish
+) 
+
+if "%choice%"=="5" (
+   echo Installing, please wait...
+   winget install Zoom.Zoom --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
+   goto finish
+) 
+
+if "%choice%"=="6" (
+   echo Installing, please wait...
+   winget install Element.Element --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
+   goto finish
+)
+
 if "%choice%"=="1" (
-   echo ==============
-   echo 1. Telegram Desktop (Official)
+   echo ================================
+   echo 1. Telegram Desktop *Official*
    echo 2. 64Gram
-   echo ==============
+   echo ================================
    set /p choice="Enter your choice: "
 
    if "%choice%"=="1" (
-      winget install Telegram.TelegramDesktop --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&
+      winget install Telegram.TelegramDesktop --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="2" (
-      winget install 64gram.64gram --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      winget install 64gram.64gram --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    )
-) else if "%choice%"=="2" (
+)
+if "%choice%"=="2" (
    echo ========================
-   echo 1. Discord (Official)
+   echo 1. Discord *Official*
    echo 2. Discord PTB
    echo 3. Discord Canary
    echo 4. Discord Development
@@ -46,34 +71,27 @@ if "%choice%"=="1" (
    set /p choice="Enter your choice: "
 
    if "%choice%"=="1" (
-      winget install Discord.Discord --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install Discord.Discord --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="2" (
-      winget install Discord.Discord.PTB --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install Discord.Discord.PTB --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="3" (
-      winget install Discord.Discord.Canary --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&
+      echo Installing, please wait...
+      winget install Discord.Discord.Canary --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="4" (
-      winget install Discord.Discord.Development --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&
+      echo Installing, please wait...
+      winget install Discord.Discord.Development --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="5" (
-      winget install Vencord.Vencord --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&
+      echo Installing, please wait...
+      winget install Vencord.Vencord --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    )
-) else if "%choice%"=="3" (
-   winget install Viber.Viber --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
-   goto finish
-) else if "%choice%"=="4" (
-   winget install WhatsApp.WhatsApp --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
-   goto finish
-) else if "%choice%"=="5" (
-   winget install Zoom.Zoom --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
-   goto finish
-) else if "%choice%"=="6" (
-   winget install Element.Element --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
-   goto finish
-)
+) 
 
 :finish
 echo Done. Press any key to exit...

@@ -18,7 +18,8 @@ echo ===========================
 set /p choice="Enter your choice: "
 
 if "%choice%"=="1" (
-   winget install qBittorrent.qBittorrent --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+   echo Installing, please wait...
+   winget install qBittorrent.qBittorrent --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
    goto finish
 ) else if "%choice%"=="2" (
    ...

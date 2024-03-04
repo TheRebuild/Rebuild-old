@@ -23,40 +23,56 @@ echo ===================
 
 set /p choice="Enter your choice: "
 
-if "%choice%"=="1" (
-   winget install Google.Chrome --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+if %choice%==1 (
+   echo Installing, please wait...
+   winget install Google.Chrome --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
    goto finish
-) else if "%choice%"=="2" (
+) 
+if %choice%==3 (
+   echo Installing, please wait...
+   winget install Microsoft.Edge --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
+   goto finish
+) 
+if %choice%==4 (
+   echo Installing, please wait...
+   winget install Vivaldi.Vivaldi --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
+   goto finish
+) 
+if %choice%==5 (
+   echo Installing, please wait...
+   winget install LibreWolf.LibreWolf --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
+   goto finish
+) 
+if %choice%==6 (
+   echo Installing, please wait...
+   winget install Brave.Brave --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
+   goto finish
+) 
+if %choice%==7 (
+   echo Installing, please wait...
+   winget install Waterfox.Waterfox --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
+   goto finish
+) 
+if %choice%==8 (
+   echo Installing, please wait...
+   winget install Ablaze.Floorp --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
+   goto finish
+)
+if %choice%==2 (
    echo =================================================
-   echo 1. Mozilla Firefox ESR (Extended Support Release)
-   echo 2. Mozilla Firefox (Default)
+   echo 1. Mozilla Firefox ESR *Extended Support Release*
+   echo 2. Mozilla Firefox *Default*
    echo =================================================
-   set /p choice="Enter your choice: "
-   if "%choice%"=="1" (
-      winget install Mozilla.Firefox.ESR --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+   set /p browser_choice="Enter your choice: "
+   if "%browser_choice%"=="1" (
+      echo Installing, please wait...
+      winget install Mozilla.Firefox.ESR --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
-   ) else (
-      winget install Mozilla.Firefox --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+   ) else if "%browser_choice%"=="2" (
+      echo Installing, please wait...
+      winget install Mozilla.Firefox --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    )
-) else if "%choice%"=="3" (
-   winget install Microsoft.Edge --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
-   goto finish
-) else if "%choice%"=="4" (
-   winget install Vivaldi.Vivaldi --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
-   goto finish
-) else if "%choice%"=="5" (
-   winget install LibreWolf.LibreWolf --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
-   goto finish
-) else if "%choice%"=="6" (
-   winget install Brave.Brave --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
-   goto finish
-) else if "%choice%"=="7" (
-   winget install Waterfox.Waterfox --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
-   goto finish
-) else if "%choice%"=="8" (
-   winget install Ablaze.Floorp --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
-   goto finish
 )
 
 :finish

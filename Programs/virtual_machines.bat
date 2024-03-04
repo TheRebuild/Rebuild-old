@@ -18,10 +18,12 @@ echo ===========================
 set /p choice="Enter your choice: "
 
 if "%choice%"=="1" (
-   winget install VMware.WorkstationPro --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+   echo Installing, please wait...
+   winget install VMware.WorkstationPro --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
    goto finish
 ) else if "%choice%"=="2" (
-   winget install Oracle.VirtualBox --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+   echo Installing, please wait...
+   winget install Oracle.VirtualBox --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
    goto finish
 )
 

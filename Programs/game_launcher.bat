@@ -19,13 +19,16 @@ echo ===================
 set /p choice="Enter your choice: "
 
 if "%choice%"=="1" (
-   winget install Valve.Steam --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+   echo Installing, please wait...
+   winget install Valve.Steam --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
    goto finish
 ) else if "%choice%"=="2" (
-   winget install EpicGames.EpicGamesLauncher --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&
+   echo Installing, please wait...
+   winget install EpicGames.EpicGamesLauncher --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
    goto finish
 ) else if "%choice%"=="3" (
-   winget install Ubisoft.Connect --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&
+   echo Installing, please wait...
+   winget install Ubisoft.Connect --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
    goto finish
 ) 
 

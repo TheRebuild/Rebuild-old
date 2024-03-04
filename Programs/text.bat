@@ -33,22 +33,28 @@ if "%choice%"=="1" (
    set /p choice="Enter your choice: "
 
    if "%choice%"=="1" (
-      winget install Microsoft.VisualStudioCode --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install Microsoft.VisualStudioCode --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="2" (
-      winget install Microsoft.VisualStudioCode.Insiders --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install Microsoft.VisualStudioCode.Insiders --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="3" (
-      winget install Microsoft.VisualStudio.2022.Community --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install Microsoft.VisualStudio.2022.Community --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="4" (
-      winget install Microsoft.VisualStudio.2019.Community --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install Microsoft.VisualStudio.2019.Community --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="5" (
-      winget install Microsoft.VisualStudio.2022.Professional --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install Microsoft.VisualStudio.2022.Professional --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="6" (
-      winget install Microsoft.VisualStudio.2019.Professional --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install Microsoft.VisualStudio.2019.Professional --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    )
 ) else if "%choice%"=="2" (
@@ -66,28 +72,36 @@ if "%choice%"=="1" (
    set /p choice="Enter your choice: "
 
    if "%choice%"=="1" (
-      winget install JetBrains.PyCharm.Community --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing PyCharm Community, please wait...
+      winget install JetBrains.PyCharm.Community --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="2" (
-      winget install JetBrains.PyCharm.Professional --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing PyCharm Professional, please wait...
+      winget install JetBrains.PyCharm.Professional --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="3" (
-      winget install JetBrains.CLion --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing CLion, please wait...
+      winget install JetBrains.CLion --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="4" (
-      winget install Jetbrains.WebStorm --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1 
+      echo Installing WebStorm, please wait...
+      winget install Jetbrains.WebStorm --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="5" (
-      winget install JetBrains.IntelliJIDEA.Ultimate --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing IntelliJ IDEA, please wait...
+      winget install JetBrains.IntelliJIDEA.Ultimate --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="6" (
-      winget install JetBrains.IntelliJIDEA.Community --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing IntelliJ IDEA Community, please wait...
+      winget install JetBrains.IntelliJIDEA.Community --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="7" (
-      winget install JetBrains.WebStorm --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing PhpStorm, please wait...
+      winget install JetBrains.WebStorm --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="8" (
-      winget install JetBrains.GoLand --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing GoLand, please wait...
+      winget install JetBrains.GoLand --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    )
 ) else if "%choice%"=="3" (
@@ -100,21 +114,26 @@ if "%choice%"=="1" (
    set /p choice ="Enter your choice: "
 
    if "%choice%"=="1" (
-      winget install SublimeHQ.SublimeText.4 --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install SublimeHQ.SublimeText.4 --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="2" (
-      winget install SublimeHQ.SublimeText.3 --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install SublimeHQ.SublimeText.3 --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    ) else if "%choice%"=="3" (
-      winget install SublimeHQ.SublimeMerge --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+      echo Installing, please wait...
+      winget install SublimeHQ.SublimeMerge --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
    )
 ) else if "%choice%"=="4" (
-   winget install vim.vim --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+   echo Installing, please wait...
+   winget install vim.vim --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
    goto finish
 )
 else if "%choice%"=="5" (
-   winget install Notepad++.Notepad++ --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+   echo Installing, please wait...
+   winget install Notepad++.Notepad++ --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
    goto finish
 ) else (
    

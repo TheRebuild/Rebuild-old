@@ -19,13 +19,16 @@ echo ========================================
 set /p choice="Enter your choice: "
 
 if "%choice%"=="1" (
-    winget install ShareX.ShareX --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+    echo Installing, please wait...
+    winget install ShareX.ShareX --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
     goto finish
 ) else if "%choice%"=="2" (
-    winget install flameshot.Flameshot --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+    echo Installing, please wait...
+    winget install flameshot.Flameshot --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
     goto finish
 ) else if "%choice%"=="3" (
-    winget install Skillbrains.Lightshot --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force >NUL 2>&1
+    echo Installing, please wait...
+    winget install Skillbrains.Lightshot --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
     goto finish
 )
 

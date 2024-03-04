@@ -7,6 +7,8 @@ pause
 exit
 :OSC
 
+title Arterium OS CodeName "Crystal" - Installer
+
 winget settings --enable InstallerHashOverride >NUL 2>&1
 
 echo Main Menu
@@ -24,16 +26,18 @@ echo ========================================
 
 set /p choice="Enter your choice: "
 
+cls
+
 if "%choice%"=="1" (
    call "%~dp0\Programs\browsers.bat"
 ) else if "%choice%"=="2" (
-   call "%~dp0\Programs\game_launchers.bat"
+   call "%~dp0\Programs\game_launcher.bat"
 ) else if "%choice%"=="3" (
    call "%~dp0\Programs\media.bat"
 ) else if "%choice%"=="4" (
    call "%~dp0\Programs\messengers.bat"
 ) else if "%choice%"=="5" (
-   call "%~dp0\Programs\programming.bat"
+   call "%~dp0\Programs\text.bat"
 ) else if "%choice%"=="6" (
    call "%~dp0\Programs\virtual_machines.bat"
 ) else if "%choice%"=="7" (
