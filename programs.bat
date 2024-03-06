@@ -7,7 +7,7 @@ pause
 exit
 :OSC
 
-title Arterium OS CodeName "Crystal" - Installer
+title RebOS - Programs ^| Version 1.0.2
 
 winget settings --enable InstallerHashOverride >NUL 2>&1
 
