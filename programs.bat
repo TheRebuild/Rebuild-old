@@ -7,10 +7,12 @@ pause
 exit
 :OSC
 
-title RebOS - Programs ^| Version 1.0.2.1
+title RebOS - Programs ^| Version 1.0.2.2
 
 winget settings --enable InstallerHashOverride >NUL 2>&1
 
+echo GitHub: https://github.com/RebTeam
+echo.
 echo Main Menu
 echo ========================================
 echo 1. Browsers
