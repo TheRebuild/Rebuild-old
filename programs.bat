@@ -7,7 +7,7 @@ pause
 exit
 :OSC
 
-title RebOS - Programs ^| Version 1.0.2
+title RebOS - Programs ^| Version 1.0.2.1
 
 winget settings --enable InstallerHashOverride >NUL 2>&1
 
