@@ -1,5 +1,4 @@
 @echo off 
-setlocal EnableDelayedExpansion
 
 FLTMC >NUL 2>&1 || PowerShell Start-Process -FilePath '%0' -Verb RunAs >NUL 2>&1 && EXIT /b
 FLTMC >NUL 2>&1 && GoTo OSC
@@ -64,12 +63,12 @@ if %choice%==2 (
    echo 1. Mozilla Firefox ESR *Extended Support Release*
    echo 2. Mozilla Firefox *Default*
    echo =================================================
-   set /p browser_choice=Enter your choice: 
-   if !browser_choice!==1 (
+   set /p choice="Enter your choice: "
+   if %choice%==1 (
       echo Installing, please wait...
       winget install Mozilla.Firefox.ESR --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
-   ) else if !browser_choice!==2 (
+   ) else if %choice%==2 (
       echo Installing, please wait...
       winget install Mozilla.Firefox --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
