@@ -63,12 +63,12 @@ if %choice%==2 (
    echo 1. Mozilla Firefox ESR *Extended Support Release*
    echo 2. Mozilla Firefox *Default*
    echo =================================================
-   set /p choice="Enter your choice: "
-   if %choice%==1 (
+   set /p mozilla_choice="Enter your choice: "
+   if !mozilla_choice!==1 (
       echo Installing, please wait...
       winget install Mozilla.Firefox.ESR --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
-   ) else if %choice%==2 (
+   ) else if !mozilla_choice!==2 (
       echo Installing, please wait...
       winget install Mozilla.Firefox --silent --ignore-security-hash --accept-package-agreements --accept-source-agreements --force
       goto finish
