@@ -8,6 +8,9 @@ set "Internet=0"
 
 title RebTool ^| version: %CURRENT_VERSION%
 
+echo GitHub: https://github.com/RebTeam
+echo.
+
 :main_menu 
 echo ===========================
 echo ^| 1. Windows Defender     ^| 
