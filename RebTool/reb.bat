@@ -6,9 +6,9 @@ set "CURRENT_VERSION=0.0.2"
 :: 0 - no connection ; 1 - have connection 
 set "Internet=0"
 
-title RebTool ^| version: %CURRENT_VERSION%
+title RebuildTool ^| version: %CURRENT_VERSION%
 
-echo GitHub: https://github.com/RebTeam
+echo GitHub: https://github.com/TheRebuild
 echo.
 
 :main_menu 
